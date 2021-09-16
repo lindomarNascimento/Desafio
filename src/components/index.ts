@@ -1,0 +1,5 @@
+export * from './Header'
+export * from './Search'
+export * from './CardInBanner'
+export * from './CardInSolutions'
+// export * from './footer'
