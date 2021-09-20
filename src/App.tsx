@@ -100,7 +100,7 @@ function App() {
           </S.ImageWhoWeAre>
         </S.ContainerWhoWeAre>
       </S.WhoWeAre>
-      <S.ComercialAndNewsletter color="pink">
+      <S.ComercialAndNewsletter color="pink" height='480px'>
         <p>
           Essa loja foi construída usando uma das nossas soluções da plataforma
           VTEX. tenha a sua.
@@ -108,7 +108,7 @@ function App() {
         <span>Entre em contato</span>
         <a href="#">comercial@jussi.com.br</a>
       </S.ComercialAndNewsletter>
-      <S.ComercialAndNewsletter color="black">
+      <S.ComercialAndNewsletter color="black" height='436px'>
         <p>receba novidades da nossa área de produtos digitais.</p>
         <S.ContainerSendNewsletter>
           <input type="text" placeholder="Digite seu email" />

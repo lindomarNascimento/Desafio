@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { flexCenter, theme, rem, containerCenter } from "./index";
 
+type ComercialAndNewsletterProps = {
+  color: string,
+  height: string
+}
+
 export const MainBanner = styled.section`
   ${flexCenter("space-between", "center")};
 
@@ -174,7 +179,7 @@ export const ImageWhoWeAre = styled.div`
   z-index: 1;
 `;
 
-export const ComercialAndNewsletter = styled.section`
+export const ComercialAndNewsletter = styled.section<ComercialAndNewsletterProps>`
   ${flexCenter("center", "center")};
   flex-direction: column;
 
@@ -182,7 +187,7 @@ export const ComercialAndNewsletter = styled.section`
     props.color === "pink" ? theme.color.pink : theme.color.black};
   color: ${theme.color.white};
 
-  height: 480px;
+  height: ${(props) => props.height};
 
   p {
     font-size: ${rem(32)};
@@ -210,13 +215,16 @@ export const ContainerSendNewsletter = styled.div`
   padding-bottom: 10px;
   width: 50%;
 
+  ${flexCenter('center', 'center')};
+
   input {
     background: transparent;
     border: 0;
     outline: transparent;
 
     color: ${theme.color.white};
-    width: 85%;
+    
+    flex: 1;
   }
 
   button {
@@ -227,6 +235,8 @@ export const ContainerSendNewsletter = styled.div`
     font-weight: 700;
     padding: 10px;
     text-transform: uppercase;
+
+    width: 100px;
   }
 `;
 
@@ -243,8 +253,22 @@ export const FooterContainer = styled.div`
 export const FooterRedes = styled.footer`
   a {
     cursor: pointer;
+
+   
   }
   img {
     margin-right: 17px;
+    transition-duration: 300ms;
+
+    &:hover {
+      filter: invert(48%) 
+              sepia(190%) 
+              saturate(3340%) 
+              hue-rotate(130deg) 
+              brightness(95%) 
+              contrast(80%);
+              
+      transform: scale(1.3)
+    }
   }
 `;

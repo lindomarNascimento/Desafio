@@ -4,7 +4,14 @@ import { Search } from "../index";
 export const Header = () => {
   return (
     <S.Header>
-      <S.Menu>
+      <S.MenuMobile>
+        <S.HumberguerMenu>
+          <span></span>
+          <span></span>
+          <span></span>
+        </S.HumberguerMenu>
+      </S.MenuMobile>
+      <S.MenuAndLogo>
         <S.Logo>
           <svg
             viewBox="0 0 184 40"
@@ -187,11 +194,16 @@ export const Header = () => {
             </g>
           </svg>
         </S.Logo>
-        <S.Links href="#">Nossas Soluções</S.Links>
-        <S.Links href="#">Conheça a Jussi</S.Links>
-      </S.Menu>
+        <S.Menu>
+          <S.LoginMenu>Login</S.LoginMenu>
+          <S.Links href="#">Nossas Soluções</S.Links>
+          <S.Links href="#">Conheça a Jussi</S.Links>
+        </S.Menu>
+      </S.MenuAndLogo>
+      <S.ContainerSearch>
+          <Search/>
+        </S.ContainerSearch>
       <S.Content>
-        <Search></Search>
         <S.Links href="#" login>Login</S.Links>
         <S.Cart>
           <svg

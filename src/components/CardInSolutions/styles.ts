@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { theme, rem, flexCenter } from "../../styles/index";
 
 export const ContainerCard = styled.div`
-  border: 1px solid red;
+  border: 1px solid ${theme.color.gray};
   border-radius: 4px;
 
   max-width: 241px;
