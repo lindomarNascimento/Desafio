@@ -9,7 +9,6 @@ import { ReactComponent as Cart } from "../../assets/cart.svg";
 
 const screenWidth = window.innerWidth;
 
-console.log("screenWidth :>> ", screenWidth);
 export const Header = () => {
   const [openMenuMobile, setOpenMenuMobile] = useState(false);
 
@@ -49,8 +48,8 @@ export const Header = () => {
           <Logo></Logo>
         </S.Logo>
         <S.Menu>
-          <S.Links href="#">Nossas Soluções</S.Links>
-          <S.Links href="#">Conheça a Jussi</S.Links>
+          <S.Links href="/">Nossas Soluções</S.Links>
+          <S.Links href="/">Conheça a Jussi</S.Links>
         </S.Menu>
       </S.MenuAndLogo>
 
@@ -60,7 +59,7 @@ export const Header = () => {
             <S.ContainerSearch>
               <Search />
             </S.ContainerSearch>
-            <S.Links href="#" login>
+            <S.Links href="/" login>
               Login
             </S.Links>
           </>

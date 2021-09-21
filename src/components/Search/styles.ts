@@ -11,12 +11,13 @@ export const ContainerSearcher = styled.div`
   width: 100%;
 
   position: relative;
+  cursor: pointer;
   input {
     ${flexCenter("flex-start", "center")}
     flex: 1;
 
     border: 0;
-    color: ${theme.color.pink};
+    color: ${theme.color.black};
     font-weight: 500;
 
     height: 98%;
@@ -75,6 +76,7 @@ export const ResultSearchContainer = styled.section`
   span {
     text-transform: capitalize;
     font-size: ${rem(12)};
+    margin-right: 3px;
   }
 
   .error {

@@ -23,6 +23,8 @@ export const Header = styled.header`
 
 export const Logo = styled.div`
   margin-right: 32px;
+  cursor: pointer;
+  
   svg {
     max-width: 184px;
     width: 100%;
@@ -59,7 +61,7 @@ export const OpacityMenuMobile = styled.div`
   width: 100%;
   height: 100vh;
 
-  background: ${theme.color.darker_gray}c9;
+  background: ${theme.color.black}c9;
 
   z-index: 3;
 `;
@@ -67,7 +69,7 @@ export const OpacityMenuMobile = styled.div`
 export const MenuMobileWrapper = styled.nav`
   ${flexCenter("flex-start", "flex-start")};
   flex-direction: column;
-  background-color: ${theme.color.white};
+  background-color: ${theme.color.gray};
 
   position: fixed;
   top: 0;
@@ -92,7 +94,8 @@ export const CloseMenuMobile = styled.div`
   width: 40px;
   height: 40px;
 
-  background-color: ${theme.color.pink};
+  border: 1px solid ${theme.color.pink};
+  color: ${theme.color.pink};
   border-radius: 50%;
 
   padding: 20px;
@@ -140,7 +143,9 @@ export const ContainerSearch = styled.div`
   width: 240px;
 `;
 
-export const Cart = styled.div``;
+export const Cart = styled.div`
+  cursor: pointer;
+`;
 
 export const ContainerSearchMobile = styled.div`
   width: 100%;

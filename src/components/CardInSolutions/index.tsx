@@ -21,7 +21,7 @@ export const CardInSolutions = ({
         <p>{descriptionProduct}</p>
         <ul>
           {featuresProduct.map((feature) => {
-            return <li>{feature}</li>;
+            return <li key={feature}>{feature}</li>;
           })}
         </ul>
         <button>Ver solução</button>
