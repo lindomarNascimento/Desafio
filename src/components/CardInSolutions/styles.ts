@@ -21,6 +21,10 @@ export const ContainerCard = styled.div`
 
     margin-bottom: 53px;
   }
+
+  @media (max-width: 1024px) {
+    margin: 10px 0;
+  }
 `;
 
 export const CardProdctsInfo = styled.div`

@@ -14,7 +14,7 @@ export const ContainerSearcher = styled.div`
   input {
     ${flexCenter("flex-start", "center")}
     flex: 1;
-    
+
     border: 0;
     color: ${theme.color.pink};
     font-weight: 500;
@@ -22,6 +22,7 @@ export const ContainerSearcher = styled.div`
     height: 98%;
     padding-left: 16px;
     outline: transparent;
+    background: transparent;
 
     &::placeholder {
       color: ${theme.color.pink};
@@ -29,16 +30,16 @@ export const ContainerSearcher = styled.div`
     }
   }
 
-  svg { 
+  svg {
     padding: 5px 13px;
   }
 `;
 
-
 export const ResultSearchContainer = styled.section`
+  ${flexCenter("center", "center")};
   position: absolute;
   top: 100%;
-  
+
   width: 100%;
   height: 100px;
 
@@ -74,7 +75,7 @@ export const ResultSearchContainer = styled.section`
   span {
     text-transform: capitalize;
     font-size: ${rem(12)};
-  };
+  }
 
   .error {
     font-size: ${rem(20)};
@@ -86,8 +87,7 @@ export const ResultSearchContainer = styled.section`
 
     padding: 10px;
   }
-`
-
+`;
 
 export const Close = styled.span`
   color: ${theme.color.white};
@@ -96,9 +96,9 @@ export const Close = styled.span`
   font-size: ${rem(32)};
   font-weight: 700;
 
-  ${flexCenter('center', 'center')};
+  ${flexCenter("center", "center")};
 
-  position:absolute;
+  position: absolute;
   top: 90%;
   right: -10px;
 
@@ -109,4 +109,4 @@ export const Close = styled.span`
   border-radius: 50%;
 
   cursor: pointer;
-`
+`;

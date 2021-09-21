@@ -49,6 +49,11 @@ const GlobalStyle = createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    @keyframes menu {
+        from { left: -200% }
+        to { left: 0 }
+    }
 `;
 
 export default GlobalStyle;
